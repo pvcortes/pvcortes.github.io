@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pablo Cortés Castillo</title>
+<meta name="description" content="Pablo Cortés Castillo, PhD candidate in Mathematical Sciences at Portland State University. DPG methods, a posteriori error control, operator learning.">
+<style>
+  :root {
+    --bg: #fdfcfa;
+    --text: #1d1f23;
+    --muted: #5b616b;
+    --rule: #e4e1da;
+    --accent: #1f5f9e;
+    --accent-hover: #164674;
+    --chip: #eef3f9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15171a;
+      --text: #e6e6e3;
+      --muted: #9aa0a8;
+      --rule: #2c3036;
+      --accent: #7fb2e5;
+      --accent-hover: #a9cbee;
+      --chip: #1e2733;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 800px; margin: 0 auto; padding: 56px 20px 72px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { color: var(--accent-hover); text-decoration: underline; }
+
+  header { display: flex; gap: 36px; align-items: center; }
+  header img {
+    width: 200px; height: 200px; border-radius: 50%;
+    object-fit: cover; flex-shrink: 0;
+  }
+  h1 {
+    margin: 0 0 4px;
+    font: 600 34px/1.2 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+  .role { margin: 0; color: var(--muted); }
+  .links { margin: 12px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 15px; }
+  .status {
+    margin: 32px 0 0; padding: 12px 16px; border-radius: 8px;
+    background: var(--chip); font-size: 16px;
+  }
+
+  h2 {
+    margin: 44px 0 14px; padding-bottom: 6px; border-bottom: 1px solid var(--rule);
+    font: 600 22px/1.3 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  }
+  p { margin: 0 0 14px; }
+
+  ol.pubs, ul.items { margin: 0; padding: 0; list-style: none; }
+  ol.pubs > li, ul.items > li { margin: 0 0 20px; }
+  .title { font-weight: 600; }
+  .meta { color: var(--muted); font-size: 15px; }
+  .tag { font-size: 14px; margin-right: 10px; }
+  .row { display: flex; justify-content: space-between; gap: 16px; }
+  .when { color: var(--muted); font-size: 15px; white-space: nowrap; }
+
+  ul.courses { margin: 8px 0 0; padding: 0 0 0 18px; list-style: none; font-size: 15px; }
+  ul.courses li { margin: 0 0 4px; }
+  ul.courses li::before { content: "–"; color: var(--muted); margin-left: -16px; width: 16px; display: inline-block; }
+  ul.courses .row { display: inline-flex; width: calc(100% - 2px); }
+
+  footer { margin-top: 56px; color: var(--muted); font-size: 14px; }
+
+  @media (max-width: 560px) {
+    main { padding: 32px 16px 56px; }
+    header { flex-direction: column; align-items: flex-start; gap: 18px; }
+    header img { width: 160px; height: 160px; }
+    h1 { font-size: 28px; }
+    .row { flex-direction: column; gap: 0; }
+    ul.courses .row { display: flex; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <img src="photo.jpg" alt="Pablo Cortés Castillo">
+  <div>
+    <h1>Pablo Cortés Castillo</h1>
+    <p class="role">PhD candidate in Mathematical Sciences, Portland State University<br>
+      Advisor: Jay Gopalakrishnan</p>
+    <ul class="links">
+      <li><a href="mailto:pcortes@pdx.edu">pcortes@pdx.edu</a></li>
+      <li><a href="cv.pdf">CV (PDF)</a></li>
+      <li><a href="https://github.com/pvcortes">GitHub</a></li>
+      <li><a href="https://orcid.org/0009-0000-2131-1498">ORCID</a></li>
+      <li><a href="https://www.linkedin.com/in/pablo-valentin-cortes-castillo/">LinkedIn</a></li>
+    </ul>
+  </div>
+</header>
+
+<p class="status">I am looking for postdoctoral positions starting in mid-2027.</p>
+
+<h2>Research Interests &amp; Background</h2>
+<p>My research develops a posteriori error control on parametric solution manifolds with
+discontinuous Petrov–Galerkin (DPG) methods, seeking two-sided error bounds that hold for
+arbitrary trial functions, not only discrete solutions, and remain uniform along the manifold.
+The work spans the design of the DPG test-space topology, the construction of Fortin operators,
+and extensions to nonlinear and transport problems. Since the resulting estimators are
+computable, they can drive adaptivity, reduced-basis methods and PDE-constrained optimization,
+and in particular serve as variationally correct loss functions for learning
+parameter-to-solution maps with neural networks.</p>
+<p><strong>Interests:</strong> Reliable and efficient functionals and residuals, DPG methods,
+Fortin operators for broken spaces, parameter-to-solution manifolds and well-posedness of
+operators in Bochner spaces, non-uniform inf-sup conditions, operator learning, and
+high-performance simulation of physical phenomena.</p>
+<p><strong>Background:</strong> Finite element methods, PDEs, mathematical physics, inverse
+problems, PDE-constrained optimization and adjoint analysis, parallel algorithms.</p>
+
+<h2>Education</h2>
+<ul class="items">
+  <li>
+    <div class="row"><span class="title">Doctor of Philosophy in Mathematical Sciences – Candidate</span><span class="when">2023 – June 2027 (expected)</span></div>
+    <div class="meta">Portland State University, Fariborz Maseeh Department of Mathematics and Statistics.<br>
+      Advisor: Jay Gopalakrishnan.</div>
+  </li>
+  <li>
+    <div class="row"><span class="title">Master of Science in Mathematical Sciences</span><span class="when">2025</span></div>
+    <div class="meta">Portland State University, Fariborz Maseeh Department of Mathematics and Statistics.<br>
+      Advisor: Jay Gopalakrishnan.</div>
+  </li>
+  <li>
+    <div class="row"><span class="title">Master of Science in Engineering</span><span class="when">2024</span></div>
+    <div class="meta">Pontificia Universidad Católica de Chile.<br>
+      Thesis: <em>Inverse problem of identification of Lamé parameters in elastodynamics equation
+      using Symplectic HDG-FEM direct solver schemes.</em><br>
+      Advisor: Manuel Sánchez.</div>
+  </li>
+  <li>
+    <div class="row"><span class="title">Professional Degree in Mathematical and Computational Engineering</span><span class="when">2024</span></div>
+    <div class="meta">Pontificia Universidad Católica de Chile.</div>
+  </li>
+  <li>
+    <div class="row"><span class="title">Bachelor of Science in Engineering</span><span class="when">2021</span></div>
+    <div class="meta">Pontificia Universidad Católica de Chile.<br>
+      Major in Mathematical Engineering. Minor in Theory and Application of Mathematical Engineering.</div>
+  </li>
+</ul>
+
+<h2>Research Experience</h2>
+<ul class="items">
+  <li>
+    <div class="row"><span class="title">Graduate Research Intern – Lawrence Livermore National Laboratory</span><span class="when">2026 – present</span></div>
+    <div class="meta">Computational Engineering Division. Supervisors: Mathias Schmidt &amp; Boyan Lazarov.<br>
+      Adjoint-based transient PDE-constrained optimization for elastodynamics in MFEM: topology
+      optimization and inverse identification of material density.</div>
+  </li>
+  <li>
+    <div class="row"><span class="title">Research Assistant – Portland State</span><span class="when">Fall 2024 – Spring 2025, Winter 2026</span></div>
+    <div class="meta">Research assistantship grants at PSU Math + Stats Department. Advisor: Jay Gopalakrishnan.</div>
+  </li>
+</ul>
+
+<h2>Research</h2>
+<ol class="pubs">
+  <li>
+    <div class="row"><span class="title">DPG loss functions for learning parameter-to-solution maps by neural networks</span><span class="when">2026</span></div>
+    <div class="meta">Pablo Cortés Castillo, Wolfgang Dahmen and Jay Gopalakrishnan.
+      Accepted in <em>Computers &amp; Mathematics with Applications</em>.</div>
+    <a class="tag" href="https://doi.org/10.1016/j.camwa.2026.09.005">Journal</a>
+    <a class="tag" href="https://arxiv.org/abs/2506.18773">arXiv</a>
+  </li>
+  <li>
+    <div class="row"><span class="title">Variationally correct loss functions for nonlinear parametric problems and their neural approximations</span><span class="when">2026</span></div>
+    <div class="meta">Pablo Cortés Castillo, Wolfgang Dahmen and Jay Gopalakrishnan.
+      Submitted to <em>IMA Journal of Numerical Analysis</em>.</div>
+    <a class="tag" href="https://arxiv.org/abs/2610.19296">arXiv</a>
+  </li>
+  <li>
+    <div class="row"><span class="title">Global error estimators for parametric monotone nonlinearities and neural approximations</span><span class="when">2026</span></div>
+    <div class="meta">Pablo Cortés Castillo, Wolfgang Dahmen and Jay Gopalakrishnan.
+      Submitted to <em>Advances in Computational Mathematics</em>.</div>
+    <a class="tag" href="https://arxiv.org/abs/2610.05767">arXiv</a>
+  </li>
+  <li>
+    <div class="row"><span class="title">Fortin operators for DPG advection discretizations</span><span class="when">2026</span></div>
+    <div class="meta">Pablo Cortés Castillo and Jay Gopalakrishnan.
+      Submitted to <em>Mathematics of Computation</em>.</div>
+    <a class="tag" href="https://arxiv.org/abs/2608.30043">arXiv</a>
+  </li>
+  <li>
+    <div class="row"><span class="title">Inverse problem of identification of Lamé parameters in elastodynamics equation using Symplectic HDG-FEM direct solver schemes</span><span class="when">2024</span></div>
+    <div class="meta">Pablo Cortés Castillo. Master Thesis.</div>
+  </li>
+</ol>
+
+<h2>Selected Talks</h2>
+<ul class="items">
+  <li>
+    <div class="row"><span class="title">MFEM Community Workshop</span><span class="when">September 2026</span></div>
+    <div class="meta">Talk: <em>Transient PDE-constrained optimization for hyperbolic phenomena</em>.
+      Georgia Tech. Atlanta, GA.</div>
+  </li>
+  <li>
+    <div class="row"><span class="title">SIAM PNW Biennial Meeting</span><span class="when">October 2025</span></div>
+    <div class="meta">Mini-symposium: <em>Recent Developments on Hybrid Methods Combining Neural
+      Networks with Classical Numerical Methods</em>. University of Washington. Seattle, WA.</div>
+  </li>
+</ul>
+
+<h2>Leadership &amp; Service</h2>
+<ul class="items">
+  <li>
+    <div class="row"><span class="title">Society of Industrial and Applied Mathematics (SIAM)</span><span class="when">2025 – present</span></div>
+    <div class="meta">Membership.</div>
+  </li>
+  <li>
+    <div class="row"><span class="title">Research Training Group in Computation and Data Enabled Science (RTG in CADES)</span><span class="when">2023 – present</span></div>
+    <div class="meta">Graduate Trainee.</div>
+  </li>
+</ul>
+
+<h2>Skills</h2>
+<p><strong>Programming:</strong> Python (Advanced), C++ (Advanced), PyTorch, Matlab, Mathematica,
+R, SQL, HPC, NGSolve, MFEM.<br>
+<strong>Languages:</strong> Spanish (native), English (proficient).</p>
+
+<h2>Awards &amp; Funding</h2>
+<ul class="items">
+  <li>
+    <div class="row"><span class="title">SIAM Travel Award 2025</span><span class="when">October 2025</span></div>
+    <div class="meta">SIAM PNW Biennial Meeting travel award. University of Washington. Seattle, WA.</div>
+  </li>
+  <li>
+    <div class="row"><span class="title">Frank Cater Scholarship</span><span class="when">2023 – 2025</span></div>
+    <div class="meta">Awarded by the Fariborz Maseeh Department of Mathematics and Statistics.
+      Portland State University. Portland, OR.</div>
+  </li>
+</ul>
+
+<h2>Teaching Experience</h2>
+<ul class="items">
+  <li>
+    <div class="title">Lecturer – Portland State</div>
+    <div class="meta">Lecturer at PSU Math + Stats Department.</div>
+    <ul class="courses">
+      <li><span class="row"><span>MTH111Z – Precalculus</span><span class="when">Fall 2026</span></span></li>
+      <li><span class="row"><span>MTH111Z – Precalculus</span><span class="when">Fall 2025</span></span></li>
+      <li><span class="row"><span>Bootcamp – Introduction to Finite Element Methods</span><span class="when">Summer 2025</span></span></li>
+      <li><span class="row"><span>Bootcamp – Introduction to Finite Element Methods</span><span class="when">Summer 2024</span></span></li>
+    </ul>
+  </li>
+  <li>
+    <div class="title">Teaching Assistant – Portland State</div>
+    <div class="meta">TA and grader for undergraduate courses at PSU Math + Stats Department.</div>
+    <ul class="courses">
+      <li><span class="row"><span>Intro. to Linear Algebra</span><span class="when">Spring 2024</span></span></li>
+      <li><span class="row"><span>Calculus II</span><span class="when">Winter 2024</span></span></li>
+      <li><span class="row"><span>Trigonometry</span><span class="when">Fall 2023</span></span></li>
+    </ul>
+  </li>
+  <li>
+    <div class="title">Teaching Assistant – PUC Chile</div>
+    <div class="meta">TA and grader for graduate and undergraduate courses at the PUC Engineering and Mathematics Department.</div>
+    <ul class="courses">
+      <li><span class="row"><span>Advanced Linear Algebra and Applications</span><span class="when">Fall 2022</span></span></li>
+      <li><span class="row"><span>Advanced Linear Algebra and Applications</span><span class="when">Spring 2022</span></span></li>
+      <li><span class="row"><span>Precalculus</span><span class="when">Fall 2021</span></span></li>
+      <li><span class="row"><span>Linear Algebra</span><span class="when">Fall 2019</span></span></li>
+      <li><span class="row"><span>Calculus</span><span class="when">Spring 2019</span></span></li>
+      <li><span class="row"><span>Statics &amp; Dynamics</span><span class="when">Fall 2018</span></span></li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Industry Experience</h2>
+<ul class="items">
+  <li>
+    <div class="row"><span class="title">Servicios Financieros Lider-BCI</span><span class="when">2022 – 2026</span></div>
+    <div class="meta">Data &amp; Analytics.<br>
+      Design and Implementation of different predictive models to accurately forecast clients
+      transactional behavior (for example churn, loans, etc.), using statistics and machine
+      learning techniques. Construction of pipelines, architecture developing and maintenance
+      among other tasks are also part of the job.</div>
+  </li>
+</ul>
+
+<footer>Last updated October 2026.</footer>
+
+</main>
+</body>
+</html>
